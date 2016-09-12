@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Home</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./Pages/Js/restaurantsSearch.js"></script>
+    </head>
+    <body>
+        <div>
+        <input type="text" value="" name="search" id="searchbarid" class="searchbarclass" placeholder="place..">
+        <input type="button" value="search" onclick="search(document.getElementById('searchbarid').value)" id="searchbuttonid" class="searchbuttonclass">
+        </div>
+        <div class="searchresults">
+        </div>
+
+        <div class="signinblock" id ="signinblockid" style="float : right">
+            Get Custom search
+            <br></br>
+      <form method="POST" action="http://localhost:8080/authentication">
+        username :<input type="text" value="" name="username"  >
+        <br></br>
+        password : <input type="password" value="" name="password">
+        <br></br>
+        <input type="submit" value="signin" name="submit">
+        </form>
+        </div>
+    </body>
+</html>
